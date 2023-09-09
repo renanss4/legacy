@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel - página de Reserva</title>
+    </head>
+    <body>
+        <header>
+            <h1>Reservas - Restaurante da Família</h1>
+        </header>
+
+        <section>
+            <p>Informe o dia da sua reserva</p>
+
+            <input type="date" name="dataReserva" id="dataReserva">
+
+            <p>Número de pessoas:</p>
+
+            <input type="number" name="numeroPessoas" id="numeroPessoas">
+        </section>
+
+        <section>
+            <button onclick="finalizarReserva()">Finalizar reserva</button>
+            <br>
+            <p id="resultadoReserva"></p>
+        </section>
+
+        <footer>
+            <p>
+                &copy; Renan - SENAI
+            </p>
+        </footer>
+
+        <script src="reserva.js"></script>
+    </body>
+</html>
