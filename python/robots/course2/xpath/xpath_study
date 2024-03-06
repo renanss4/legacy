@@ -1,0 +1,58 @@
+# Undestook the XPath
+### https://scrapinghub.github.io/xpath-playground/
+
+<article class ="main-article">
+    <h1> Titanic(1997) </h1>
+    <p class ="plot" > 84 years later... </p>
+    <p class ="plot2" > In the end ... </p>
+    <div class ="full-script">
+    "13 meters. You should see it. "
+    "Okay, take her up and over the bow rail. "
+    </div>
+</article>
+
+
+
+## EXEMPLOS:
+
+//h1
+    Pega todas as tags "h1"
+        <h1> Titanic(1997) </h1>
+
+//h1/text()
+    Pega apenas os valores das tags "h1"; 
+    text() é a função do XPath que obtém o texto de qualquer tag
+        Titanic(1997)
+
+//p[2]
+    Caso tenha dois ou mais tags "p", ele pegará sempre o segundo
+        <p class ="plot2" > In the end ... </p>
+
+//div[@class="full-script"]
+    Pega todas as tags "div" com a classe "full-script"
+        <div class ="full-script">
+            "13 meters. You should see it. "
+            "Okay, take her up and over the bow rail. "
+        </div>
+
+//p[(@class="plot") or (@class="plot2")]
+    É possível utilizar também operadores lógicos(or, and).
+    Adicionando as expressões dentro dos parênteses.
+        <p class ="plot" > 84 years later... </p>
+        <p class ="plot2" > In the end ... </p>
+
+//p[contains(@class, "plot")]
+    A função contains() recebe dois parametros, o primeiro é
+    o atributo e o segundo é o valor deste atributo
+
+## Caracteres especiais
+
+- /: Select the children from the node set on the left side of this character
+- //: Specifies that the matching node set should be located at any level within the document
+- . : Specifies the current context should be used (refers to present node) 
+- .. : Refers to a parent node
+- * : A wildcard character that selects all elements or attributes regardless of names
+- ./* : Select all the children nodes considering the current context
+- @: Select an attibute
+- (): Grouping an XPath expression
+- [n]: Indicates that a node with index "n" should be selected
