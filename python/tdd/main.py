@@ -13,3 +13,5 @@ except AssertionError as e:
 #     print(soma('15', 15))
 # except TypeError as e:
 #     print('Conta inválida: ', e)
+
+print('Conta', soma(25, 25))
