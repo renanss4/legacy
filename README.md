@@ -11,3 +11,7 @@
 - Em qualquer lugar, ver playlists do youtube
 
 - Em qualquer lugar, masterizar curso de Java, firmar bem os conceitos
+
+- Arrumar curriculos e se candidatar
+
+- Rever repositorios (estudar sobre estruturas de dados e padrões de projetos)(em java e e python)
