@@ -26,12 +26,53 @@
     IMPORTANTE: Não utilize funções prontas como: array.sort(). Implemente o seu próprio algoritmo de ordenação.
 """ 
 
+
+def to_string(func):
+    """
+    Decorator that converts the return value of the decorated function to a string,
+    removing square brackets for lists and curly braces for dictionaries.
+
+    Args:
+        func (function): The function to be decorated.
+
+    Returns:
+        function: The decorated function.
+
+    Raises:
+        ValueError: If the return value of the function is not a list or a dictionary.
+    """
+    def wrapper(*args, **kwargs):
+        result = func(*args, **kwargs)
+        if isinstance(result, list):
+            result_string = ""
+            i = 0
+            while i < len(result):
+                result_string += str(result[i])
+                if i < len(result) - 1:
+                    result_string += ","
+                i += 1
+            return result_string
+        elif isinstance(result, dict):
+            result_string = ""
+            values = list(result.values())
+            i = 0
+            while i < len(values):
+                result_string += str(values[i])
+                if i < len(values) - 1:
+                    result_string += ","
+                i += 1
+            return result_string
+        else:
+            raise ValueError("The function did not return a list or a dictionary")
+    return wrapper
+
 class Ordenacao():
 
     def __init__(self, array_para_ordenar:[]): # type: ignore
         """Recebe o array com o conteudo a ser ordenado"""
         self.array_para_ordenar = array_para_ordenar
 
+    @to_string
     def ordena(self):
         """Realiza a ordenacao do conteudo do array recebido no construtor"""
         # Utilizing object-oriented Bubble Sort algorithm as presented by the professor in class
@@ -70,5 +111,5 @@ class Ordenacao():
         return resultado
     
 a = Ordenacao([2, 4, 5, 4, -2, 0, 1])
-a.ordena()
-print(a.to_string())
+print(a.ordena())
+# print(a.to_string())
