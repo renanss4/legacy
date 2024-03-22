@@ -4,6 +4,8 @@
 
 - Na 4S, estudar SQL e arrumar repositório para tal
 
+- Na 4S, estudar HTML e CSS, tal como SQL
+
 - Na 4S, finalizar curso de webscrapy na Udemy
 
 - Na 4S, masterizar django e outros assuntos, atraves do curso de python na udemy
