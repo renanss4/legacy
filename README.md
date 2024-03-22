@@ -4,7 +4,7 @@
 
 - Na 4S, estudar HTML e CSS, tal como SQL
 
-- Olhar
+- Olhar Docker e readme dos outros repositorios
 
 - Na 4S, finalizar curso de webscrapy na Udemy
 
