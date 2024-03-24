@@ -1,25 +1,50 @@
 # Todo
 
-- Na 4S, estudar SQL e arrumar repositório para tal
+- [x] Finalizar curso Python
 
-- Na 4S, estudar HTML e CSS, tal como SQL
+- [ ] Olhar slides de banco de dados
 
-- Olhar Docker e readme dos outros repositorios
+- [ ] Ver parte de SQL na UDEMY
 
-- Na 4S, finalizar curso de webscrapy na Udemy
+- [ ] Criar documentação de HTML, CSS
 
-- Arrumar readme de todos os repositórios/refatorar os repositórios
+- [ ] Finalizar curso de webscrapy na Udemy
 
-- Na 4S, masterizar django
+- [ ] Estudar estrutura de dados, algooritmos e padrões de projeto
 
-- Em qualquer lugar, ver playlists do youtube
+- [ ] Estudar Docker e colocar no repositorio configuring-workspace
 
-- Em qualquer lugar, masterizar curso de Java, firmar bem os conceitos
+- [ ] Ver playlists do youtube
 
-- Aprender testes unitários com Java e Python
+- [ ] Refatorar repositórios e projetos
 
-- Arrumar curriculos e se candidatar
+- [ ] Estudar Django
 
-- Rever repositorios (estudar sobre estruturas de dados e padrões de projetos)(em java e python)
+- [ ] Estudar Java
 
-- Fazer readme do Chess (projeto)
+- [ ] Arrumar curriculos e se candidatar
+
+- [ ] Aprender testes unitários com Java e Python
+
+- [ ] Fazer readme do Chess (projeto)
+
+---
+
+| Repositório | Refatorado? | Concluído |
+|----------|----------|----------|
+| [Lua - Study](https://github.com/renanss4/lua-study)  | Sim | Sim | Sim |
+| [SQL - Study](https://github.com/renanss4/sql-study) | Não  | Não |
+| [GigApp](https://github.com/renanss4/GigApp)  | Não  | Não |
+| [Tic-Tae-Toe](https://github.com/renanss4/Tic-Tac-Toe) | Não  | Não |
+| [renanss4](https://github.com/renanss4/renanss4)  | Sim  | Sim |
+| [Connect4](https://github.com/renanss4/Connect4)  | Não  | Sim |
+| [REST-APython](https://github.com/renanss4/REST-APython)  | Não  | Sim |
+| [Donut-C](https://github.com/renanss4/Donut-C)  | Não  | Sim |
+| [aprendendo-programar](https://github.com/renanss4/aprendendo-programar)  | Não  | Sim |
+| [ReservationPage](https://github.com/renanss4/reservationPage)  | Não  | Sim |
+| [configuring-workspace](https://github.com/renanss4/configuring-workspace)  | Não  | Não |
+| [iWork](https://github.com/renanss4/iWork)  | Não  | Não |
+| [Data-Structures](https://github.com/renanss4/Data-Structures)  | Não  | Não |
+| [Chess](https://github.com/renanss4/Chess) | Não  | Sim |
+
+---
