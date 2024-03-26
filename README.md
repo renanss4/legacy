@@ -28,6 +28,8 @@
 
 - [ ] Fazer readme do Chess (projeto)
 
+- [ ] Ver cursos gratuitos da Google, Coursera e IBM. Alem de olhar postagens salvas no linkedin
+
 ---
 
 | Repositório | Refatorado? | Concluído |
