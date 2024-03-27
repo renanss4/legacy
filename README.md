@@ -6,27 +6,27 @@
 
 - [ ] Ver parte de SQL na UDEMY
 
-- [ ] Criar documentação de HTML, CSS
-
 - [ ] Finalizar curso de webscrapy na Udemy
 
 - [ ] Estudar estrutura de dados, algooritmos e padrões de projeto
 
 - [ ] Estudar Docker e colocar no repositorio configuring-workspace
 
+- [ ] Estudar Java com foco
+
 - [ ] Ver playlists do youtube
 
 - [ ] Refatorar repositórios e projetos
 
-- [ ] Estudar Django
-
-- [ ] Estudar Java
+- [ ] Fazer um projeto com Django
 
 - [ ] Arrumar curriculos e se candidatar
 
 - [ ] Aprender testes unitários com Java e Python
 
 - [ ] Fazer readme do Chess (projeto)
+
+- [ ] Criar documentação de HTML, CSS
 
 - [ ] Ver cursos gratuitos da Google, Coursera e IBM. Alem de olhar postagens salvas no linkedin
 
