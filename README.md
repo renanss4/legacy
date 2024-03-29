@@ -2,7 +2,7 @@
 
 - [x] Finalizar curso Python
 
-- [ ] Olhar slides de banco de dados
+- [x] Olhar slides de banco de dados
 
 - [ ] Ver parte de SQL na UDEMY
 
