@@ -10,7 +10,7 @@
 
 - [ ] Estudar estrutura de dados, algooritmos e padrões de projeto
 
-- [ ] Estudar Docker e colocar no repositorio configuring-workspace
+- [ ] Estudar Docker e colocar no repositorio configuring-workspace (colocar R e RStudio)
 
 - [ ] Estudar Java com foco
 
