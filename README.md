@@ -4,13 +4,15 @@
 
 - [x] Olhar slides de banco de dados
 
+- [ ] Estudar Docker
+
 - [ ] Ver parte de SQL na UDEMY
 
 - [ ] Finalizar curso de webscrapy na Udemy
 
 - [ ] Estudar estrutura de dados, algooritmos e padrões de projeto
 
-- [ ] Estudar Docker e colocar no repositorio configuring-workspace (colocar R e RStudio)
+- [ ] Colocar o docker no repositorio configuring-workspace (colocar R e RStudio)
 
 - [ ] Estudar Java com foco
 
