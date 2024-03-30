@@ -4,7 +4,7 @@
 
 - [x] Olhar slides de banco de dados
 
-- [ ] Estudar Docker
+- [x] Estudar Docker
 
 - [ ] Ver parte de SQL na UDEMY
 
