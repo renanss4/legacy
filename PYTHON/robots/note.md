@@ -22,7 +22,23 @@
 2. Fast
 3. Most complete framework 
 
-## 2 Introduction with BS4
+## 2 Introduction to BeautifulSoup 4 (BS4)
+
+### How to Install BeautifulSoup 4 and Requests?
+
+#### BeautifulSoup 4
+
+```python
+pip install beautifulsoup4
+```
+
+#### Requests
+
+```python
+pip install requests
+``` 
+
+### Example
 
 ```python
 from bs4 import BeautifulSoup  # Importa a classe BeautifulSoup para fazer a análise do HTML
