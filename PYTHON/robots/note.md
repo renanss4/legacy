@@ -143,3 +143,18 @@ for page in range(1, int(last_page)+1):
 
 ## 4 XPath
 
+[Click here](./04_xpath/main.md)
+
+### Introduction to Selenium
+
+Firstly, it's necessary to download the Chrome WebDriver from the official Selenium website. Ensure that you download the appropriate WebDriver version compatible with your Chrome browser version.
+
+After downloading the Chrome WebDriver, you need to place it in a directory that is included in your system's PATH environment variable.
+
+Finally, install Selenium using pip:
+
+```python
+pip install selenium
+```
+
+Once Selenium is installed, you're ready to start automating browser tasks using Python and Selenium.
