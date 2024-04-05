@@ -1,4 +1,4 @@
-# README: XPath
+# XPath
 
 ## Introdução
 
