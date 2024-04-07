@@ -4,31 +4,33 @@
 
 - [x] Olhar slides de banco de dados
 
-- [x] Estudar Docker
-
-- [ ] Ver parte de SQL na UDEMY
-
-- [ ] Finalizar curso de webscrapy na Udemy
-
-- [ ] Estudar estrutura de dados, algooritmos e padrões de projeto
-
-- [ ] Colocar o docker no repositorio configuring-workspace (colocar R e RStudio)
-
-- [ ] Estudar Java com foco
+- [ ] Estudar Docker
 
 - [ ] Ver playlists do youtube
 
-- [ ] Refatorar repositórios e projetos
+- [ ] Estudar estrutura de dados, algooritmos e padrões de projeto
 
-- [ ] Fazer um projeto com Django
+- [ ] Estudar Java com foco
 
 - [ ] Arrumar curriculos e se candidatar
 
-- [ ] Aprender testes unitários com Java e Python
+- [ ] Ver parte de SQL na UDEMY
+
+- [ ] Finalizar curso de webscrapy na Udemy e projeto também
+
+- [ ] Colocar o docker no repositorio configuring-workspace (colocar R e RStudio)
+
+- [ ] Refatorar repositórios e projetos
 
 - [ ] Fazer readme do Chess (projeto)
 
+- [ ] Aprender testes unitários com Java e Python
+
 - [ ] Criar documentação de HTML, CSS
+
+- [ ] Fazer um projeto com Django
+
+- [ ] Projeto em javascript/react que apresenta um corpo humano e onde o mouse clicar dizer qual o osso/musculo com descrição do mesmo
 
 - [ ] Ver cursos gratuitos da Google, Coursera e IBM. Alem de olhar postagens salvas no linkedin
 
