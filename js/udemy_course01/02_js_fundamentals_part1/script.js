@@ -191,7 +191,7 @@ if (BMIMark > BMIJohn) {
 } else {
     console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})`)
 }
-*/
+
 
 // type conversion
 const inputYear = '1991';
@@ -228,4 +228,20 @@ console.log(5 == 5);   // true, both the value and type are the same
 // Using ===
 console.log(5 === "5"); // false, because the type is different
 console.log(5 === 5);   // true, both the value and type are the same
+
+const hasDriversLicense = true; // A
+const hasGoodVision = false; // B
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+const shouldDrive = hasDriversLicense || hasGoodVision;
+
+if (shouldDrive) {
+    console.log('Sara is able to drive!');
+} else {
+    console.log('Someone else should drive...');
+}
+*/
 
