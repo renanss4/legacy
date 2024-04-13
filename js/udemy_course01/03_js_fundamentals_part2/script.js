@@ -202,8 +202,6 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
 
-*/
-
 
 ///////////////////////////////////////
 // Basic Array Operations (Methods)
@@ -237,3 +235,15 @@ console.log(friends.includes(23));
 if (friends.includes('Steven')) {
   console.log('You have a friend called Steven');
 }
+
+*/
+
+const calcTip = function(bill) {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+calcTip(bills[2]);
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
