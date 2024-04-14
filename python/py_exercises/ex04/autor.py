@@ -1,23 +1,26 @@
+
+
 class Autor:
     def __init__(self, codigo: int, nome: str):
-        if isinstance(codigo, int) and isinstance(nome, str):
-            self.__codigo = codigo
-            self.__nome = nome
+        assert isinstance(codigo, int) and isinstance(nome, str)
+
+        self.__codigo = codigo
+        self.__nome = nome
 
     @property
-    def codigo(self):
+    def codigo(self) -> int:
         return self.__codigo
 
     @codigo.setter
-    def codigo(self, codigo):
+    def codigo(self, codigo: int) -> None:
         if isinstance(codigo, int):
             self.__codigo = codigo
 
     @property
-    def nome(self):
+    def nome(self) -> str:
         return self.__nome
 
     @nome.setter
-    def nome(self, nome):
+    def nome(self, nome: str) -> None:
         if isinstance(nome, str):
             self.__nome = nome
