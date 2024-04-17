@@ -4,13 +4,15 @@
 
 - [x] Olhar slides de banco de dados
 
-- [ ] Estudar Docker
+- [ ] Estudar JavaScript, Node, React, React Native
 
 - [ ] Ver playlists do youtube
 
 - [ ] Estudar estrutura de dados, algooritmos e padrões de projeto
 
 - [ ] Estudar Java com foco
+
+- [ ] Estudar Docker
 
 - [ ] Arrumar curriculos e se candidatar
 
