@@ -1,0 +1,10 @@
+0- Arrumar o repositório configuring-workspace 
+    adicionar nele a instalação do R e RStudio
+    para cada tipo de ambiente ou cada linguagem
+    terá um script separado
+
+1- projeto em react/react native que mostra o corpo humano e se clicar em um membro,
+    mostrar ossos, musculos, articulações e etc
+    javascript/react que apresenta um corpo humano e onde o mouse clicar dizer qual o osso/musculo com descrição do mesmo
+
+2- Fazer projeto de web scraping
