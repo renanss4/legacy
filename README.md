@@ -12,7 +12,7 @@
 
 - [ ] Criar documentação de Git
 
-- [ ] Criar documenntação de Inglês
+- [ ] Criar documentação de Inglês
 
 - [ ] Finalizar cursos na Udemy
     - [ ] JavaScript
