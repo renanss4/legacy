@@ -1,0 +1,12 @@
+- Gênero, personagem e faixa etária seriam melhores modelados como classes;
+- Não está claro o propósito da classe Biblioteca;
+- Quando um papel é atribuído a uma associação, não se deve incluir o mesmo como atributo na representação da respectiva classe (ex.: atributo "Livro" na classe Biblioteca);
+- A nomenclatura de atributos e métodos no Python deve seguir o padrão snake_case;
+- Na relação de herança, não há a definição de papéis ou de multiplicidade;
+- A representação da associação entre as classes Livro e Amigo por meio da classe associativa Emprestimo está incorreta;
+- A representação da multiplicidade das associações não segue o padrão UML;
+- O atributo "nome" não deveria aparecer na definição das classes Amigo e Autor, visto que está sendo herdado da classe Pessoa.
+- Os métodos de cadastro, exclusão e edição de Amigo, Autor e Livro não deveriam estar nas respectivas classes;
+- Os métodos "realizarEmprestimo" e "listarEmprestimo" não deveria estar na classe Emprestimo;
+- O parâmetro "Livro" no método "realizarDevolucao" da classe Emprestimo é desnecessário;
+- Nenhum construtor foi definido nas classes.
