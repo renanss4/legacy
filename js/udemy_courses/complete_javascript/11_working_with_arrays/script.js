@@ -71,45 +71,124 @@ const currencies = new Map([
   ['GBP', 'Pound sterling'],
 ]);
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
 
-let arr = ['a', 'b', 'c', 'd', 'e'];
+/*
+const arr = [23, 11, 64];
+console.log(arr[0]);
+console.log(arr.at(0));
+
+console.log(arr[arr.length - 1]);
+console.log(arr.slice(-1));
+
+// Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity)
+const arrTest = [1, 2, 1, 3, 2, 4, 5, 5];
+let newArr = [];
+
+for (let i = 0; i < arrTest.length; i++) {
+  let tmp = arrTest[i];
+  let isDuplicate = false;
+
+  for (let j = 0; j < newArr.length; j++) {
+    if (tmp === newArr[j]) {
+      isDuplicate = true;
+      break;
+    }
+  }
+
+  if (!isDuplicate) {
+    newArr.push(tmp);
+  }
+}
+
+console.log(newArr);
+ */
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
 
 // SLICE -> FATIAR (PT-BR)
-console.log(arr.slice(2));
-console.log(arr.slice(2, 4));
-console.log(arr.slice(-2));
-console.log(arr.slice(-1));
-console.log(arr.slice(1, -2));
-console.log(arr.slice());
-console.log(...arr);
-console.log('---------------------------------');
+// console.log(arr.slice(2));
+// console.log(arr.slice(2, 4));
+// console.log(arr.slice(-2));
+// console.log(arr.slice(-1));
+// console.log(arr.slice(1, -2));
+// console.log(arr.slice());
+// console.log(...arr);
+// console.log('---------------------------------');
 
 // SPLICE -> Emendar (PT-BR)
-// console.log(arr.splice(2));
-arr.splice(-1);
-arr.splice(1, 2);
-console.log(arr);
-console.log('---------------------------------');
+// // console.log(arr.splice(2));
+// arr.splice(-1);
+// arr.splice(1, 2);
+// console.log(arr);
+// console.log('---------------------------------');
 
 // REVERSE -> Reverter (PT-BR)
-arr = ['a', 'b', 'c', 'd', 'e'];
-const arr2 = ['j', 'i', 'h', 'g', 'f'];
-console.log(arr2.reverse());
-console.log(arr2);
-// console.log([...arr, ...arr2]);
-console.log('---------------------------------');
+// arr = ['a', 'b', 'c', 'd', 'e'];
+// const arr2 = ['j', 'i', 'h', 'g', 'f'];
+// console.log(arr2.reverse());
+// console.log(arr2);
+// // console.log([...arr, ...arr2]);
+// console.log('---------------------------------');
 
 // CONCAT -> Concatenar (PR-BR)
-console.log(arr, arr2);
-const letters = arr.concat(arr2);
-console.log(letters);
-const test = [...arr, ...arr2];
-console.log(test);
-// console.log(letters === test);
-console.log('---------------------------------');
+// console.log(arr, arr2);
+// const letters = arr.concat(arr2);
+// console.log(letters);
+// const test = [...arr, ...arr2];
+// console.log(test);
+// // console.log(letters === test);
+// console.log('---------------------------------');
 
 // JOIN -> Juntar (PT-BR)
-console.log(letters.join(' - '));
+// console.log(letters.join(' - '));
+
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// for (const movement of movements) {
+for (const [i, movement] of movements.entries()) {
+  if (movement > 0) {
+    console.log(`Movement ${i + 1}: You deposied ${movement}`);
+  } else {
+    console.log(`Movement ${i + 1}: You withdrew ${Math.abs(movement)}`);
+  }
+}
+console.log('---- FOREACH ---');
+movements.forEach((mov, i, arr) => {
+  if (mov > 0) {
+    console.log(`Movement ${i + 1}: You deposied ${mov}`);
+  } else {
+    console.log(`Movement ${i + 1}: You withdrew ${Math.abs(mov)}`);
+  }
+});
+// 0: function(200)
+// 1: function(450)
+// 2: function(400)
+// 3: function(3000)
+// ...
+
+const produtos = [
+  { id: 1, nome: 'detergente', valor: 2.0, categoria: 'limpeza' },
+  { id: 2, nome: 'amaciante', valor: 6.5, categoria: 'limpeza' },
+  { id: 3, nome: 'pão', valor: 2.0, categoria: 'alimento' },
+  { id: 4, nome: 'queijo', valor: 7.0, categoria: 'alimento' },
+  { id: 5, nome: 'leite', valor: 2.2, categoria: 'alimento' },
+];
+
+const ids = produtos.map(p => p.id);
+const nomes = produtos.map(p => p.nome);
+console.log(ids);
+console.log(nomes);
+
+// const alimentos = produtos.filter(p => p.categoria === 'alimento');
+// console.log(alimentos.map(a => a.nome));
+const alimentos = produtos
+  .filter(p => p.categoria === 'alimento')
+  .map(p => p.nome);
+console.log(alimentos);
+
+// const numeros = [1, 2, 3, 4];
+// const total = numeros.reduce((acc, numero) => acc + numero, 0);
+const total = produtos.reduce((acc, p) => acc + p.valor, 0);
+console.log(total);
