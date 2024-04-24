@@ -951,4 +951,46 @@ console.log(i, j, k);
 // Default values
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
+
+const alimentos = [
+  'Banana',
+  'Uva',
+  'Banana',
+  'Laranja',
+  'Pera',
+  'Pera',
+  'Maçã',
+  'Laranja',
+];
+
+const alimentoUnicosSet = new Set();
+
+// alimentos.forEach(alimento => {
+//   alimentoUnicos.add(alimento);
+// });
+
+alimentos.forEach(alimento => alimentoUnicosSet.add(alimento));
+
+console.log([...alimentoUnicosSet.values()]);
+
+const alimentos = [
+  { nome: 'Laranja', categoria: 'fruta' },
+  { nome: 'Banana', categoria: 'fruta' },
+  { nome: 'Maçã', categoria: 'fruta' },
+  { nome: 'Banana', categoria: 'fruta' },
+  { nome: 'Abóbora', categoria: 'legume' },
+  { nome: 'Abobrinha', categoria: 'legume' },
+  { nome: 'Espinafre', categoria: 'legume' },
+];
+
+const alimentoUnicosMap = new Map();
+
+alimentos.forEach(alimento => {
+  if (!alimentoUnicosMap.has(alimento.categoria)) {
+    alimentoUnicosMap.set(alimento.categoria, alimento);
+  }
+});
+
+console.log([...alimentoUnicosMap.keys()]);
+console.log([...alimentoUnicosMap.values()]);
 */
