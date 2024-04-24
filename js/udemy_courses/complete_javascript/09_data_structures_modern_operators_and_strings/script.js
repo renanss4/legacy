@@ -55,17 +55,17 @@ const arr = [1, 2, ...[3, 4]];
 
 //REST, because on LEFT side of =
 const [a, b, ...others] = [1, 2, 3, 4, 5];
-console.log(a, b, others);
+// console.log(a, b, others);
 
 const [pizza, , risotto, ...otherFood] = [
   ...restaurant.mainMenu,
   ...restaurant.starterMenu,
 ];
-console.log(pizza, risotto, otherFood);
+// console.log(pizza, risotto, otherFood);
 
 // Objects
 const { sat, ...weekday } = restaurant.openingHours;
-console.log(weekday);
+// console.log(weekday);
 
 // 2) Functions
 const add = function (...numbers) {
@@ -74,15 +74,15 @@ const add = function (...numbers) {
   console.log(sum);
 };
 
-add(2, 3);
-add(5, 3, 7, 2);
-add(8, 2, 5, 3, 2, 1);
+// add(2, 3);
+// add(5, 3, 7, 2);
+// add(8, 2, 5, 3, 2, 1);
 
 const x = [23, 5, 7];
-add(...x);
+// add(...x);
 
 // Use ANY data type, return ANY data type, short-circuiting
-console.log(3 || 'Jonas');
+// console.log(3 || 'Jonas');
 
 ///////////////////////////////////////
 // String Methods Practice
@@ -331,7 +331,7 @@ Let's continue with our football betting app! This time, we have a map with a lo
       [FIRST HALF] 17: ⚽️ GOAL
 
 GOOD LUCK 😀
-*/
+
 
 const gameEvents = new Map([
   [17, '⚽️ GOAL'],
@@ -502,7 +502,7 @@ BONUS: Create an object called 'scorers' which contains the names of the players
       }
 
 GOOD LUCK 😀
-*/
+
 
 const game = {
   team1: 'Bayern Munich',
