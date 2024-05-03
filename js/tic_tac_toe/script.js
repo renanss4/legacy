@@ -1,8 +1,12 @@
 "use strict";
 
+const resetButton = document.getElementById("resetButton");
+const cells = document.querySelectorAll(".cell");
 const player = ["X", "O"];
 let currentPlayer = 0;
-const changePlayer = function () {
+let gameEnded = true;
+
+const changePlayer = () => {
   //   if (currentPlayer === 0) {
   //     currentPlayer = 1;
   //   } else {
@@ -12,9 +16,32 @@ const changePlayer = function () {
   return player[currentPlayer];
 };
 
-const cell = document.querySelectorAll(".cell");
-cell.forEach((cll, index) => {
-  cll.addEventListener("click", () => {
-    console.log(`O jogador ${changePlayer()} clicou na posição ${index}`);
+const checkWinner = () => {};
+const checkDraw = () => {};
+
+cells.forEach((cell) => {
+  cell.addEventListener("click", () => {
+    console.log(player[currentPlayer]);
+    if (!cell.textContent && !gameEnded) {
+      cell.textContent = player[currentPlayer];
+      if (checkWinner()) {
+        gameEnded = true;
+        alert(`O jogador ${player[currentPlayer]} venceu!`);
+      } else if (checkDraw()) {
+        gameEnded = true;
+        alert("Empate!");
+      } else {
+        changePlayer();
+      }
+    }
   });
+});
+
+resetButton.addEventListener("click", () => {
+  cells.forEach((cell) => {
+    cell.textContent = "";
+  });
+  gameEnded = false;
+  currentPlayer = 0;
+  console.clear();
 });
