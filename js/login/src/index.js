@@ -7,7 +7,6 @@ const app = express();
 
 // convert data into json format
 app.use(express.json());
-
 app.use(express.urlencoded({ extended: false }));
 
 // Static file
@@ -23,6 +22,10 @@ app.get("/", (req, res) => {
 
 app.get("/signup", (req, res) => {
   res.render("signup");
+});
+
+app.get("/change-password", (req, res) => {
+  res.render("change-password");
 });
 
 // Register User
@@ -46,6 +49,7 @@ app.post("/signup", async (req, res) => {
 
     const userdata = await collection.insertMany(data);
     console.log(userdata);
+    res.send("User registered successfully!");
   }
 });
 
@@ -68,6 +72,39 @@ app.post("/login", async (req, res) => {
     }
   } catch {
     res.send("wrong Details");
+  }
+});
+
+// Change Password
+app.post("/change-password", async (req, res) => {
+  try {
+    const { username, oldPassword, newPassword } = req.body;
+    const user = await collection.findOne({ name: username });
+    if (!user) {
+      res.send("User not found");
+      return;
+    }
+
+    // Compare the old password
+    const isOldPasswordMatch = await bcrypt.compare(oldPassword, user.password);
+    if (!isOldPasswordMatch) {
+      res.send("Old password is incorrect");
+      return;
+    }
+
+    // Hash the new password
+    const saltRounds = 10;
+    const hashedNewPassword = await bcrypt.hash(newPassword, saltRounds);
+
+    // Update the user's password in the database
+    await collection.updateOne(
+      { name: username },
+      { $set: { password: hashedNewPassword } }
+    );
+
+    res.send("Password changed successfully!");
+  } catch (error) {
+    res.send("An error occurred while changing the password");
   }
 });
 
