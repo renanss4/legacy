@@ -1,12 +1,21 @@
 # Todo
 
-- [ ] Estudar JavaScript
+- [ ] Estudar
+
+  - [ ] JavaScript
     - [ ] Node
     - [ ] React
     - [ ] React Native
     - [ ] Vue
+  - [ ] Autenticação
+  - [ ] Docker
+  - [ ] Testes Unitários
+  - [ ] Java
+  - [ ] WebScrapinng
 
 - [ ] Ver playlists do youtube
+
+- [ ] Estrutura de dados, algoritmos e padrões de projeto (JAVA)
 
 - [ ] Criar documentação de HTML, CSS
 
@@ -14,18 +23,7 @@
 
 - [ ] Criar documentação de Inglês
 
-- [ ] Finalizar cursos na Udemy
-    - [ ] JavaScript
-    - [ ] Java
-    - [ ] WebScrapinng
-
-- [ ] Estrutura de dados, algoritmos e padrões de projeto (JAVA)
-
 - [ ] Fazer readme do Chess (projeto)
-
-- [ ] Aprender sobre testes unitários
-
-- [ ] Estudar Docker
 
 - [ ] Refatorar repositórios e projetos
 
